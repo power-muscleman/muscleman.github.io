@@ -1,11 +1,11 @@
 export default function Banner() {
-  const liClassName = "mr-5";
+  const liClassName = "items-center";
   const linkClassName =
-    "relative text-lg font-bold pt-[5px] hover:text-blue-300";
+    "relative text-xl font-bold pt-[5px] hover:text-blue-300";
   return (
     <nav className="z-10 w-auto">
       <div className="pt-[15px] pr-10">
-        <ul className="flex justify-center">
+        <ul className="flex justify-evenly text-">
           <li className={liClassName}>
             <a href="#works" className={linkClassName}>
               works
