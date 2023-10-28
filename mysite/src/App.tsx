@@ -2,6 +2,7 @@ import About from "./about";
 import Banner from "./banner";
 import Contact from "./contact";
 import Header from "./header";
+import Works from "./works";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Banner />
       <About />
+      <Works />
       <Contact />
     </>
   );
