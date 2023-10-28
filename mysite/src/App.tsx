@@ -1,5 +1,6 @@
 import About from "./about";
 import Banner from "./banner";
+import Contact from "./contact";
 import Header from "./header";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Banner />
       <About />
+      <Contact />
     </>
   );
 }
