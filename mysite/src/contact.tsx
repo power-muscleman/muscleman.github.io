@@ -1,7 +1,7 @@
 export default function Contact() {
   const contactItemClassName = "mr-[10px]";
   return (
-    <section>
+    <section id="contact">
       <div className="inner">
         <h2 className="title">contact</h2>
         <p className="mb-8 mx-auto text-center">
