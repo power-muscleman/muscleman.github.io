@@ -3,7 +3,7 @@ export default function Skils() {
   const skilImgClassName = "mr-3 w-[150px] h-auto";
   const skilNameClassName = "mb-[3px]";
   return (
-    <section>
+    <section id="skils">
       <div className="inner">
         <h2 className="title">skil</h2>
         <div className="flex justify-between flex-wrap">
