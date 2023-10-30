@@ -1,3 +1,6 @@
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function About() {
   return (
     <section id="about">
@@ -19,7 +22,7 @@ export default function About() {
             大卒の2年目エンジニアです。主にWeb系の技術を扱っています。
             <p>趣味は野球・筋トレ・ドライブです</p>
             <p>
-              github:
+              <FontAwesomeIcon icon={faGithub} className="pr-3" size="lg" />:
               <a
                 href="https://github.com/power-muscleman"
                 className="text-sky-500 hover:text-sky-700"
