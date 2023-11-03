@@ -1,11 +1,14 @@
+import { faFeather } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function Skils() {
   const skilItemClassName = "flex justify-between w-[48%] mb-12";
   const skilImgClassName = "mr-3 w-[150px] h-auto";
-  const skilNameClassName = "mb-[3px]";
+  const skilNameClassName = "mb-[3px] font-bold text-lg";
   return (
     <section id="skils">
       <div className="inner">
-        <h2 className="title">skil</h2>
+        <h2 className="title">skils</h2>
         <div className="flex justify-between flex-wrap">
           <div className={skilItemClassName}>
             <p className={skilImgClassName}>
@@ -14,7 +17,7 @@ export default function Skils() {
             <div className="flex-1">
               <h3 className={skilNameClassName}>HTML5</h3>
               <p>
-                CSSと併用してWEBサイトの作成、LPの作成を行うことができます。
+                基本的なタブ構造の理解。CSSと併用してWEBサイトの作成、LPの作成を行うことができます。
               </p>
             </div>
           </div>
@@ -39,7 +42,9 @@ export default function Skils() {
             </p>
             <div className="flex-1">
               <h3 className={skilNameClassName}>JavaScript</h3>
-              <p>説明説明説明</p>
+              <p>
+                イベントやオブジェクトの理解を持ちつつ、サイト作成や動作処理を開発しています。が、まだまだ理解が足りないので精進しています。
+              </p>
             </div>
           </div>
 
@@ -49,7 +54,9 @@ export default function Skils() {
             </p>
             <div className="flex-1">
               <h3 className={skilNameClassName}>TypeScript</h3>
-              <p>説明説明説明</p>
+              <p>
+                基本的に普段はTypeScriptとこの後のReactを用いて開発しています。型付けなども勉強中です。
+              </p>
             </div>
           </div>
 
@@ -59,7 +66,23 @@ export default function Skils() {
             </p>
             <div className="flex-1">
               <h3 className={skilNameClassName}>React</h3>
-              <p>説明説明説明</p>
+              <p>
+                TypeScriptとReactを用いて開発をしています。State処理やフックの使い方を理解しています。
+              </p>
+            </div>
+          </div>
+
+          <div className={skilItemClassName}>
+            <p className={skilImgClassName}>
+              <FontAwesomeIcon icon={faFeather} size="5x" className="" />
+            </p>
+            <div className="flex-1">
+              <h3 className={skilNameClassName}>ツール</h3>
+              <p>
+                Slackはチーム・お客様とのやりとりで頻繁に使用していたため利用は苦でないです。
+                <br />
+                Githubもチームでのプロジェクト管理で使用しているので慣れています。
+              </p>
             </div>
           </div>
         </div>
