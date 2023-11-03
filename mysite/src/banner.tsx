@@ -3,15 +3,42 @@ import { faFolderOpen, faUser } from "@fortawesome/free-solid-svg-icons";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { Link as Scroll } from "react-scroll";
+import { useEffect, useState } from "react";
 
 export default function Banner() {
   const liClassName = "items-center";
   const linkClassName =
     "relative text-xl font-bold pt-[5px] hover:text-blue-300 cursor-pointer";
+  const navStyle = "z-10";
+
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // スクロール位置が特定の値を超えたらバナーを固定
+      if (window.scrollY >= 540) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    // スクロールイベントリスナーを追加
+    window.addEventListener("scroll", handleScroll);
+
+    // コンポーネントがアンマウントされたときにイベントリスナーを削除
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="z-10 w-auto">
-      <div className="pt-[15px] pr-10">
-        <ul className="flex justify-evenly text-">
+    <nav
+      id="gnav"
+      className={isSticky ? `${navStyle} sticky top-0 border-b-2` : navStyle}
+    >
+      <div className={isSticky ? `pt-[15px] pr-10 mb-3` : `pt-[15px] pr-10`}>
+        <ul className="flex justify-evenly">
           <li className={liClassName}>
             <Scroll to="works" className={linkClassName} smooth={true}>
               <FontAwesomeIcon icon={faFolderOpen} className="pr-2" />
