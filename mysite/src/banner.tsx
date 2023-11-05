@@ -35,28 +35,33 @@ export default function Banner() {
   return (
     <nav
       id="gnav"
-      className={isSticky ? `${navStyle} sticky top-0 border-b-2` : navStyle}
+      className={
+        isSticky ? `${navStyle} sticky top-0 border-b-2 bg-[#fffdfa]` : navStyle
+      }
     >
       <div className={isSticky ? `pt-[15px] pr-10 mb-3` : `pt-[15px] pr-10`}>
         <ul className="flex justify-evenly">
-          <li className={liClassName}>
-            <Scroll to="works" className={linkClassName} smooth={true}>
-              <FontAwesomeIcon icon={faFolderOpen} className="pr-2" />
-              works
-            </Scroll>
-          </li>
-          <li className={liClassName}>
-            <Scroll to="skils" className={linkClassName} smooth={true}>
-              <FontAwesomeIcon icon={faPen} className="pr-2" />
-              skils
-            </Scroll>
-          </li>
           <li className={liClassName}>
             <Scroll to="about" className={linkClassName} smooth={true}>
               <FontAwesomeIcon icon={faUser} className="pr-2" />
               about
             </Scroll>
           </li>
+
+          <li className={liClassName}>
+            <Scroll to="skils" className={linkClassName} smooth={true}>
+              <FontAwesomeIcon icon={faPen} className="pr-2" />
+              skils
+            </Scroll>
+          </li>
+
+          <li className={liClassName}>
+            <Scroll to="works" className={linkClassName} smooth={true}>
+              <FontAwesomeIcon icon={faFolderOpen} className="pr-2" />
+              works
+            </Scroll>
+          </li>
+
           <li className={liClassName}>
             <Scroll to="contact" className={linkClassName} smooth={true}>
               <FontAwesomeIcon icon={faEnvelope} className="pr-2" />
