@@ -9,7 +9,7 @@ export default function Skils() {
     <section id="skils">
       <div className="inner">
         <h2 className="title">skils</h2>
-        <div className="flex justify-between flex-wrap">
+        <div className="flex justify-around flex-wrap">
           <div className={skilItemClassName}>
             <p className={skilImgClassName}>
               <img src="html.png" alt="" />
