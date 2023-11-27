@@ -39,8 +39,8 @@ export default function Banner() {
         isSticky ? `${navStyle} sticky top-0 border-b-2 bg-[#fffdfa]` : navStyle
       }
     >
-      <div className={isSticky ? `pt-[15px] pr-10 mb-3` : `pt-[15px] pr-10`}>
-        <ul className="flex justify-evenly">
+      <div className={`pt-[15px] ${isSticky ? "mb-3" : ""}`}>
+        <ul className="flex justify-evenly max-[425px]:grid max-[425px]:grid-cols-2 max-[425px]:place-items-center">
           <li className={liClassName}>
             <Scroll to="about" className={linkClassName} smooth={true}>
               <FontAwesomeIcon icon={faUser} className="pr-2" />
