@@ -1,15 +1,13 @@
-import { faFeather } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 export default function Skils() {
-  const skilItemClassName = "flex justify-between w-[48%] mb-12";
+  const skilItemClassName =
+    "flex justify-between mb-12 max-sm:flex-wrap max-lg:flex-col max-lg:place-items-center lg:w-[48%]";
   const skilImgClassName = "mr-3 w-[150px] h-auto";
   const skilNameClassName = "mb-[3px] font-bold text-lg";
   return (
     <section id="skils">
       <div className="inner">
         <h2 className="title">skils</h2>
-        <div className="flex justify-around flex-wrap">
+        <div className="flex justify-around flex-wrap max-lg:flex-col max-lg:items-center">
           <div className={skilItemClassName}>
             <p className={skilImgClassName}>
               <img src="html.png" alt="" />
@@ -43,7 +41,9 @@ export default function Skils() {
             <div className="flex-1">
               <h3 className={skilNameClassName}>JavaScript</h3>
               <p>
-                イベントやオブジェクトの理解を持ちつつ、サイト作成や動作処理を開発しています。が、まだまだ理解が足りないので精進しています。
+                イベントやオブジェクトの理解を持ちつつ、サイト作成や動作処理を開発しています。
+                <br />
+                まだまだ理解が足りないので精進しています。
               </p>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function Skils() {
 
           <div className={skilItemClassName}>
             <p className={skilImgClassName}>
-              <FontAwesomeIcon icon={faFeather} size="5x" className="" />
+              <img src="tool.jpg" alt="" />
             </p>
             <div className="flex-1">
               <h3 className={skilNameClassName}>ツール</h3>

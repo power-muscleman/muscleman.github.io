@@ -7,19 +7,10 @@ export default function Contact() {
         <p className="mb-8 mx-auto text-center">
           お問い合わせは、
           <br className="hidden" />
-          SNSかメールにてお願いいたします。
+          メールにてお願いいたします。
         </p>
 
         <div className="flex flex-col mx-auto items-center">
-          <a
-            className={contactItemClassName}
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noopener"
-          >
-            <img alt="Twitterアイコン画像" />
-          </a>
-          <p>twitter</p>
           <span className={contactItemClassName}>
             <p>下記メールアドレスをクリックするとメール画面に遷移します。</p>
             <a
