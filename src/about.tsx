@@ -11,7 +11,7 @@ export default function About() {
 
         <div className="flex justify-center mx-auto max-[774px]:flex-wrap">
           <img
-            src="/pose_dance_ukareru_man.png"
+            src="pose_dance_ukareru_man.png"
             alt="自己紹介写真"
             className="rounded-[50%] object-scale-down"
           />
